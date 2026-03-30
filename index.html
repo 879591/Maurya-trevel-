@@ -1,0 +1,142 @@
+
+    
+    <!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>अमर मोर्य - Four Wheeler Booking Service | Rudhauli Basti</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+    body { font-family: 'Poppins', sans-serif; }
+    .hero-bg { background: linear-gradient(135deg, #f59e0b, #b45309); }
+  </style>
+</head>
+<body class="bg-gray-50">
+
+  <!-- NAVBAR -->
+  <nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="flex items-center gap-3">
+        <h1 class="text-3xl font-bold text-amber-600">अमर मोर्य</h1>
+        <span class="text-sm bg-amber-100 text-amber-700 px-3 py-1 rounded-full">Four Wheeler Booking</span>
+      </div>
+      <div class="hidden md:flex gap-8 text-lg">
+        <a href="#home" class="hover:text-amber-600">Home</a>
+        <a href="#services" class="hover:text-amber-600">Services</a>
+        <a href="#vehicles" class="hover:text-amber-600">Vehicles</a>
+        <a href="#book" class="hover:text-amber-600">Book Now</a>
+        <a href="#aboutme" class="hover:text-amber-600">About Developer</a>
+      </div>
+      <a href="https://wa.me/7007056119" target="_blank" class="bg-green-500 text-white px-6 py-3 rounded-full flex items-center gap-2 hover:bg-green-600">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+      </a>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION (Poster jaisa) -->
+  <section id="home" class="hero-bg text-white py-20">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h1 class="text-6xl font-bold leading-tight">अमर मोर्य<br>Four Wheeler Booking Service</h1>
+        <p class="text-3xl mt-4">अब गाड़ी बुक करना हुआ और भी आसान!</p>
+        <div class="mt-10 space-y-4">
+          <div class="flex items-center gap-4 text-2xl"><i class="fas fa-check text-green-300"></i> सस्ती दरों पर</div>
+          <div class="flex items-center gap-4 text-2xl"><i class="fas fa-check text-green-300"></i> भरोसेमंद सर्विस</div>
+          <div class="flex items-center gap-4 text-2xl"><i class="fas fa-check text-green-300"></i> 24×7 उपलब्ध</div>
+        </div>
+        <button onclick="document.getElementById('book').scrollIntoView({behavior:'smooth'})" 
+                class="mt-10 bg-white text-amber-700 font-bold text-2xl px-12 py-5 rounded-2xl shadow-xl hover:scale-105 transition">
+          अभी बुक करें →
+        </button>
+      </div>
+      <div class="relative">
+        <!-- Yahan tum apna poster image daal sakte ho -->
+        <img src="YOUR_POSTER_IMAGE_URL_HERE.jpg" alt="अमर मोर्य" class="rounded-3xl shadow-2xl">
+      </div>
+    </div>
+  </section>
+
+  <!-- VEHICLES -->
+  <section id="vehicles" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-12">हमारी गाड़ियाँ</h2>
+      <div class="grid md:grid-cols-2 gap-10">
+        <div class="border rounded-3xl overflow-hidden shadow-xl">
+          <img src="https://source.unsplash.com/600x400/?maruti-eeco" class="w-full">
+          <div class="p-6">
+            <h3 class="text-2xl font-bold">Maruti Suzuki EECO</h3>
+            <p class="text-green-600">8 सीटर • AC • Village Tour & Marriage</p>
+          </div>
+        </div>
+        <div class="border rounded-3xl overflow-hidden shadow-xl">
+          <img src="https://source.unsplash.com/600x400/?mahindra-bolero" class="w-full">
+          <div class="p-6">
+            <h3 class="text-2xl font-bold">Mahindra Bolero</h3>
+            <p class="text-green-600">7 सीटर • Powerful • Highway & Rough Road</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING FORM -->
+  <section id="book" class="py-20 bg-amber-50">
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-10">गाड़ी बुक करें</h2>
+      <form id="bookingForm" class="space-y-6 bg-white p-10 rounded-3xl shadow-2xl">
+        <div class="grid grid-cols-2 gap-6">
+          <input type="text" placeholder="आपका नाम" class="border p-4 rounded-2xl text-lg">
+          <input type="tel" placeholder="मोबाइल नंबर" value="7007056119" class="border p-4 rounded-2xl text-lg">
+        </div>
+        <input type="text" placeholder="पिकअप लोकेशन" class="border p-4 rounded-2xl text-lg w-full">
+        <input type="text" placeholder="ड्रॉप लोकेशन" class="border p-4 rounded-2xl text-lg w-full">
+        <div class="grid grid-cols-2 gap-6">
+          <input type="date" class="border p-4 rounded-2xl text-lg">
+          <input type="time" class="border p-4 rounded-2xl text-lg">
+        </div>
+        <select class="border p-4 rounded-2xl text-lg w-full">
+          <option>Maruti EECO</option>
+          <option>Mahindra Bolero</option>
+        </select>
+        <button type="button" onclick="submitBooking()" 
+                class="w-full bg-amber-600 text-white py-6 text-2xl font-bold rounded-3xl hover:bg-amber-700">
+          बुकिंग कन्फर्म करें
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ABOUT DEVELOPER (Tumhara Section - Side Menu wala) -->
+  <section id="aboutme" class="py-20 bg-gray-900 text-white">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-6">Developed by Suraj Maurya</h2>
+      <div class="max-w-2xl mx-auto text-lg">
+        <p>नमस्ते! मैं <strong>Suraj Maurya</strong> हूँ, rudhauli basti se </p>
+        <p class="text-3xl mt-4">📞 9792006815</p>
+        <p class="mt-6">Instagram: <a href="https://instagram.com/5tar.Suraj" target="_blank" class="text-amber-400">@5tar.Suraj</a><br>
+           YouTube: <a href="https://youtube.com/@5tarsuraj" target="_blank" class="text-amber-400">@5tarsuraj</a></p>
+        <p class="mt-8 text-amber-300">koi bhi web side banawane ke liye samprk kare / school / shop / etc.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-black text-white py-12">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <p class="text-xl">Village Kuchurua Post Bhitehara Rudhauli Basti, Uttar Pradesh</p>
+      <p class="text-3xl mt-4">📞 7007056119</p>
+      <p class="mt-8">Instagram & YouTube: <strong>5tar.Suraj</strong> | <strong>5tarsuraj</strong></p>
+      <p class="text-sm mt-10 text-gray-500">© 2026 Made with ❤️ by Suraj Maurya (rudhauli basti)</p>
+    </div>
+  </footer>
+
+  <script>
+    function submitBooking() {
+      alert("🎉 बुकिंग सफल! अमर मोर्य जी 5 मिनट में कॉन्टैक्ट करेंगे।\n\nधन्यवाद! - Developed by Suraj Maurya");
+    }
+  </script>
+</body>
+</html>
